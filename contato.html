@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato - Nosso Restaurante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="jogos.html">Jogos</a></li>
+                <li><a href="grandista.html">Grandista</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Entre em Contato</h1>
+        <p>Email: contato@nossorestaurante.com</p>
+        <p>Telefone: (11) 99999-9999</p>
+
+        <hr>
+
+        <h2>Mini-Jogo: Ache o Par!</h2>
+        <p>Clique nas cartas abaixo para revelar a comida:</p>
+        
+        <div class="game-board">
+            <div class="card" onclick="revelar(this, '🍔')">?</div>
+            <div class="card" onclick="revelar(this, '🍕')">?</div>
+            <div class="card" onclick="revelar(this, '🍔')">?</div>
+            <div class="card" onclick="revelar(this, '🍕')">?</div>
+        </div>
+    </main>
+
+    <script>
+        function revelar(card, simbolo) {
+            card.innerHTML = simbolo;
+            card.style.backgroundColor = "#27ae60";
+        }
+    </script>
