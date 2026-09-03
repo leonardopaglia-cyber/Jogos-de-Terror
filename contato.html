@@ -50,24 +50,3 @@ mensagem..."></textarea>
 
 <h1>Email: contato@nossorestaurante.com</h1>
 <h1>Telefone: (11) 99999-9999</h1>
-
-
-        <hr>
-
-        <h2>Mini-Jogo: Ache o Par!</h2>
-        <p>Clique nas cartas abaixo para revelar a comida:</p>
-        
-        <div class="game-board">
-            <div class="card" onclick="revelar(this, '🍔')">?</div>
-            <div class="card" onclick="revelar(this, '🍕')">?</div>
-            <div class="card" onclick="revelar(this, '🍔')">?</div>
-            <div class="card" onclick="revelar(this, '🍕')">?</div>
-        </div>
-    </main>
-
-    <script>
-        function revelar(card, simbolo) {
-            card.innerHTML = simbolo;
-            card.style.backgroundColor = "#27ae60";
-        }
-    </script>
